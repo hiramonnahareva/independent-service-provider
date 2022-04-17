@@ -2,31 +2,37 @@
     {
       "_id": "625bb555b0c711e2a4918a6e",
       "img": "https://www.cdlancy.ch/wp-content/uploads/2019/10/centre-dentaire-lancy-Prothese-dentaire.jpg",
-      "name": "Painless Dental Procedures"
+      "name": "Painless Dental Procedures",
+      "Price": "$500"
     },
     {
       "_id": "625bb5557ca0ef1ff3083853",
       "img": "https://www.cdlancy.ch/wp-content/uploads/2019/10/centre-dentaire-lancy-Prothese-dentaire.jpg",
-      "name": "Dental Hygiene in Pregnancy"
+      "name": "Dental Hygiene in Pregnancy",
+      "Price": "$500"
     },
     {
       "_id": "625bb555331bd185140dbec2",
       "img": "https://www.cdlancy.ch/wp-content/uploads/2019/10/centre-dentaire-lancy-Prothese-dentaire.jpg",
-      "name": "Tooth Extraction"
+      "name": "Tooth Extraction",
+      "Price": "$500"
     },
     {
       "_id": "625bb555870b3e5b1ed09705",
       "img": "https://www.cdlancy.ch/wp-content/uploads/2019/10/centre-dentaire-lancy-Prothese-dentaire.jpg",
-      "name": "Dental Sealants Application"
+      "name": "Dental Sealants Application",
+      "Price": "$500"
     },
     {
       "_id": "625bb5550922139a0aad6cbc",
       "img": "https://www.cdlancy.ch/wp-content/uploads/2019/10/centre-dentaire-lancy-Prothese-dentaire.jpg",
-      "name": "Teeth Whitening Procedures"
+      "name": "Teeth Whitening Procedures",
+      "Price": "$500"
     },
     {
       "_id": "625bb5551366832cd6d16504",
       "img": "https://www.cdlancy.ch/wp-content/uploads/2019/10/centre-dentaire-lancy-Prothese-dentaire.jpg",
-      "name": "Gum Infection - Gingivitis"
+      "name": "Gum Infection - Gingivitis",
+      "Price": "$500"
     }
   ]

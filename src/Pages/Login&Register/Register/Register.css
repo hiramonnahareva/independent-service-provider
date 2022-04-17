@@ -82,6 +82,12 @@
     border: 1px #FFFFFF solid; 
     border-radius: 50px;
 }
+.google-signin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
 @media screen and (max-width: 860px) {
     .form-container {
         display: block;

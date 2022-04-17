@@ -3,10 +3,19 @@ import './Header.css'
 import logo from '../../../images/Tooth-Icon,-dental-care-icon-premium-vector-PNG (1).png';
 import { FaTimes, FaBars } from 'react-icons/fa';
 import CustomLink from '../../../CustomLink';
+import { auth } from '../../../Hooks/Friebase.init';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { signOut } from 'firebase/auth';
 
 const Header = () => {
     const [click, setClick] = useState(true);
     const handleClick = () => setClick(!click);
+    const [user] = useAuthState (auth) ;
+    const handleSignout = () => {
+      signOut(auth).then(() => {
+
+});
+    }
     return (
         <>
             <nav className='navbar'>
@@ -26,9 +35,12 @@ const Header = () => {
                         </CustomLink>
                             </li>
                             <li className='nav-item'>
-                        <CustomLink to='/login' className='customlink-btn'>
-                                Login
-                        </CustomLink>
+                        {user ? 
+                        <button onClick={handleSignout} id='signout-btn' className='customlink-btn'>
+                                Signout
+                        </button> : <CustomLink to='/login' className='customlink-btn'>
+                                login
+                        </CustomLink>}
                             </li>
 
                             <li className='nav-item'>

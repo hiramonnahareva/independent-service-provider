@@ -1,0 +1,35 @@
+.footer-container {
+    background-color: #1a74bb;
+    padding: 10px;
+    margin-top: 20px;
+    color: white;
+    text-align: start;
+}
+.footer-container h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.footer-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 20px;
+}
+.footer-info .title {
+    padding-bottom: 20px;
+}
+.footer-container span {
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+@media only screen and (max-width: 600px) {
+    .footer-info {
+        padding-left: 20px;
+        display: block;
+        align-items: center;
+        padding: 0 , 20px;
+    }
+    .footer-info p {
+        text-align: start;
+    }
+    } 
