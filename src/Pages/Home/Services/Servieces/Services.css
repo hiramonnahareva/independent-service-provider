@@ -1,0 +1,14 @@
+.services-conatiner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px;
+    grid-gap: 20px;
+}
+@media screen and (max-width: 860px) { 
+    .services-conatiner {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr ;
+        padding: 80px;
+    }
+}

@@ -1,0 +1,18 @@
+.banner-img {
+    position: relative;
+    width: 100%;
+}
+.banner-info {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
+.banner-container h2 {
+    font-size: 60px;
+    font-weight: 300;
+    
+}
+.banner-container p {
+    font-size: 24px;
+    font-weight: 300;
+}

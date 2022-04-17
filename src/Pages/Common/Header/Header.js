@@ -14,25 +14,30 @@ const Header = () => {
                     <CustomLink to='/home' className='navbar-logo'>
                         <div className='logo-container'>
                             <img className='logo' src={logo} alt="" />
-                            <span>Dental</span>
+                            <span>Dentist</span>
                             </div>
                     </CustomLink>
                         <ul className={click ? 'menu-bar' : 'menu-display-none'}
                         onClick={() => setClick(true)}
                         >
-
                             <li className='nav-item'>
-                        <CustomLink to='/login' className='login-btn'>
-                                Login
+                        <CustomLink to='/home' className='customlink-btn'>
+                               Home
                         </CustomLink>
                             </li>
                             <li className='nav-item'>
-                        <CustomLink to='/about' className='login-btn'>
+                        <CustomLink to='/login' className='customlink-btn'>
+                                Login
+                        </CustomLink>
+                            </li>
+
+                            <li className='nav-item'>
+                        <CustomLink to='/about' className='customlink-btn'>
                                About
                         </CustomLink>
                             </li>
                             <li className='nav-item'>
-                        <CustomLink to='/blogs' className='login-btn'>
+                        <CustomLink to='/blogs' className='customlink-btn'>
                                 Blogs
                         </CustomLink>
                             </li>

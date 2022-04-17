@@ -40,7 +40,7 @@ ul{
 .menu-icon {
     display: none;
 }
-.login-btn {
+.customlink-btn {
     text-decoration: none;
     color: black;
     font-weight: 500;
@@ -81,7 +81,7 @@ ul{
         transition: all 0.5s ease-in-out; 
         width: 100%;
         background-color: #d7e9ff;
-        height: 250px;
+        height: 300px;
         z-index: 1;
     }
     .nav-item {

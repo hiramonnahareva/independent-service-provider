@@ -1,20 +1,61 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Register.css';
 import image from '../../../images/Data_security_27-1.png' ;
 import { Link } from 'react-router-dom';
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { auth } from '../../../Hooks/Friebase.init';
 
 const Register = () => {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState('');
+    const [ createUserWithEmailAndPassword, user, loading, error] = useCreateUserWithEmailAndPassword(auth);
+   
+    const handleEmail = event => {
+     setEmail(event.target.value) ;
+    }
+    const handlePassword = event => {
+        setPassword (event.target.value) ;
+    }
+    const handleConfirmPassword = event => {
+        setConfirmPassword (event.target.value) ;
+    }
+    const handleFormSubmit = event => {
+        event.preventDefault();
+        createUserWithEmailAndPassword(email, password);
+   
+   
+      if (password !== confirmPassword) {
+          alert ('password is not match');
+      }
+     
+    if (error) {
+        return (
+          <div>
+            <p>Error: {error.message}</p>
+          </div>
+        );
+      }
+      if (user) {
+        return (
+          <div>
+            <p>Registered User: {user.email}</p>
+          </div>
+        );
+      }
+    }
     return (
         <div className='register-container'>
             <div className='form-container'>
             <img src={image} alt="" />
             <div className='form-info'>
             <h2>Register</h2>
-                <form>
-                    <input className='input-field' type="text" placeholder='Enter Your Name'/>
-                    <input className='input-field' type="text" placeholder='Enter Your Email'/>
-                    <input className='input-field' type="text" placeholder='Enter Your Password'/>
-                    <input className='input-field' type="text" placeholder='Enter Your Confirm Password'/>
+                <form onSubmit={handleFormSubmit}>
+                    <input  className='input-field' type="text" placeholder='Enter Your Name'/>
+                    <input onBlur={handleEmail} className='input-field' type="email" placeholder='Enter Your Email'/>
+                    <input  onBlur={handlePassword} className='input-field' type="password" placeholder='Enter Your Password'/>
+                    <input  onBlur={handleConfirmPassword} className='input-field' type="password" placeholder='Enter Your Confirm Password'/>
+                    {loading &&  <p>Loading...</p>}
                     <input className='submit-btn' type="submit" value="search" />
                     <p className='already-singUp'>Already Sign Up? <Link className='toggle-link' to='/login'>Please Login</Link></p>
                 </form>
