@@ -10,7 +10,7 @@ const Register = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
-    const [ createUserWithEmailAndPassword, user, loading, error] = useCreateUserWithEmailAndPassword(auth);
+    const [ createUserWithEmailAndPassword, user, loading, error] = useCreateUserWithEmailAndPassword(auth , {sendPasswordResetEmail: true});
    
     const handleEmail = event => {
      setEmail(event.target.value) ;
@@ -23,9 +23,7 @@ const Register = () => {
     }
     const handleFormSubmit = event => {
         event.preventDefault();
-        createUserWithEmailAndPassword(email, password);
-   
-   
+        createUserWithEmailAndPassword(email, password); 
       if (password !== confirmPassword) {
           alert ('password is not match');
       }
@@ -45,6 +43,9 @@ const Register = () => {
         );
       }
     }
+
+    
+
     return (
         <div className='register-container'>
             <div className='form-container'>

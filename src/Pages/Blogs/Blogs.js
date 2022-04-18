@@ -34,7 +34,8 @@ const Blogs = () => {
            </p>
            </article>
            <artical className="blog">
-           Except authentication firebase provides 1. Remote Config , 2. Analytics services.
+               <h3>question-3: What other services does firebase provide other than authentication?</h3>
+         <p>Except authentication firebase provides 1. Remote Config , 2. Analytics services.Google Analytics for Firebase provides free, unlimited reporting on up to 500 distinct events.The SDK automatically captures certain key events and user properties, and you can define your own custom events to measure the things that uniquely matter to your business.Remote Config gives you visibility and fine-grained control over your app's behavior and appearance so you can make changes by simply updating its configuration from the Firebase console.</p>
            </artical>
         </div>
     );
