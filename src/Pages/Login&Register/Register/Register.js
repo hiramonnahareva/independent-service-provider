@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Register.css';
 import image from '../../../images/Data_security_27-1.png' ;
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { auth } from '../../../Hooks/Friebase.init';
 import SignInGoogle from '../SignInGoogle/SignInGoogle';
@@ -18,6 +18,14 @@ const Register = () => {
     const handlePassword = event => {
         setPassword (event.target.value) ;
     }
+    useEffect(()=>{
+      let from = location.state?.from?.pathname || "/";
+      if (user) {
+      navigate(from, { replace: true })
+      }
+      },[user])
+  let navigate = useNavigate();
+  let location = useLocation();
     const handleConfirmPassword = event => {
         setConfirmPassword (event.target.value) ;
     }
