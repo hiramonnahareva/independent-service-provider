@@ -2,18 +2,36 @@
     background-color: rgb(233, 233, 233);
     width: 28rem;
 }
-.image-container img {
+.service-container .image-container  {
     width: 100%;
-    transition: all 0.5s linear;
+    border-bottom: 6px rgb(255, 255, 255) solid;
+    position: relative;
 }
-/* .image-container img:hover {
-    width: 100%;
+figure {
     overflow: hidden;
-    -ms-transform: scale(1);
-    -webkit-transform: scale(1.5); 
-    transform: scale(1.5); 
-
-  } */
+}
+.image-container img{
+    display: block;
+     width: 100%;
+     height: auto;
+     cursor: pointer;
+  }
+#zoom-in img {
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+#zoom-in:hover img {
+    transform: scale(1.5);
+}
+.plus-icon {
+    font-size: 70px;
+    color: #dad8d8;
+    position: absolute;
+    bottom: -32px;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    left: 45%;
+}
 .service-info {
     padding: 20px;
 }
@@ -53,6 +71,7 @@
     font-weight: 500;
     color: #1a74bb;
     text-decoration: none;
+    transition: 0.3s ease-in-out;
 }
 .checkout-btn:hover {
     background-color: #1a74bb;
