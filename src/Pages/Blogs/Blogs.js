@@ -1,9 +1,12 @@
 import React from 'react';
+import './Blogs.css';
 
 const Blogs = () => {
     return (
-        <div>
+        <div className='blogs-container'>
            <article className="bolg">
+               <h3>qustion-1:  Difference between authorization and authentication.</h3>
+           <div className="table-container">
            <table>
                <tr>
                <th> Authentication </th>
@@ -22,9 +25,13 @@ const Blogs = () => {
                <td>Authorization process is done after the authentication process.</td>
                </tr>
             </table>
+           </div>
            </article>
            <article className="blog">
-           Firebase is used for many purposes that can help your apps to develop, grow and make it a quality app.Moreover, Firebase is made with a developer in mind to solve all the issues they might face when making an app.
+               <h3>question-2:  Why are you using firebase? What other options do you have to implement authentication?</h3>
+           <p>
+           Firebase is used for many purposes that can help your apps to develop, grow and make it a quality app.Moreover, Firebase is made with a developer in mind to solve all the issues they might face when making an app. implement authentication other options 1. Parse ,2. AWS Amplify, 3. Back4App, 4. Backendless, 5. Supabase, 6. appwrite 7. Hasura, 8. Nhost, 9.Deployd 10. Kuzzle.
+           </p>
            </article>
            <artical className="blog">
            Except authentication firebase provides 1. Remote Config , 2. Analytics services.

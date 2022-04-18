@@ -18,7 +18,7 @@ const Service = ({service}) => {
            </div>
             <div className="service-info">
             <h3>{name}</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <p>At The Smile Specialists, removing a tooth is always the last resort.</p>
             <h4>Price: <span>{Price}</span></h4>
            <div className="checkout-container">
            <Link to='/checkout' className='checkout-btn'>Checkout</Link>

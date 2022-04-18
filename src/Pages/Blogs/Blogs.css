@@ -1,0 +1,27 @@
+.blogs-container {
+    margin: 20px 50px;
+}
+table, td, th {  
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 15px;
+  }
+  .blogs-container h3 {
+      font-size: 30px;
+      font-weight: 400;
+      padding: 20px;
+  }
+  .blog p{
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 30px;
+      padding: 20px 5%;
+      text-align: justify;
+  }

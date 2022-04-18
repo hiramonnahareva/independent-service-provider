@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
@@ -12,6 +12,12 @@ const Login = () => {
     const [password, setPassword] = useState('');
     const [signInWithEmailAndPassword, user, loading, error] = useSignInWithEmailAndPassword(auth);
     const [sendPasswordResetEmail, sending, resetError] = useSendPasswordResetEmail(auth);
+    useEffect(()=>{
+        let from = location.state?.from?.pathname || "/";
+        if (user) {
+        navigate(from, { replace: true })
+        }
+        },[user])
     let navigate = useNavigate();
     let location = useLocation();
     const handleEmailBlur = event => {
@@ -24,10 +30,7 @@ const Login = () => {
         await sendPasswordResetEmail(email);
         toast('Sent email');
     }
-    const from = location.state?.from?.pathname || '/';
-    if (user) {
-        navigate(from, { replace: true })
-    }
+   
     const handleUserSignIn = event => {
         event.preventDefault();
         signInWithEmailAndPassword(email, password);

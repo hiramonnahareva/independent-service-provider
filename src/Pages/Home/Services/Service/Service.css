@@ -44,7 +44,7 @@ figure {
 .service-container p {
     font-size: 17px;
     font-weight: 300;
-    color: rgb(156, 154, 154);
+    color: rgb(54, 54, 54);
     padding: 10px;
 }
 .service-container h4 {
@@ -76,4 +76,10 @@ figure {
 .checkout-btn:hover {
     background-color: #1a74bb;
     color: #FFFFFF;
+}
+@media screen and (max-width: 860px) {
+    .service-container {
+        background-color: rgb(233, 233, 233);
+        width: 15rem;
+    }
 }
