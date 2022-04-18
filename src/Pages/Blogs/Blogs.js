@@ -17,12 +17,12 @@ const Blogs = () => {
                    <td>1. Authorization detects or determines user accessing resources.</td>
                </tr>
                <tr>
-                   <td>1. Athentication process, users or persons are verified.</td>
-                   <td>1. Athentication process, users or persons are validated.</td>
+                   <td>2. Athentication process, users or persons are verified.</td>
+                   <td>2. Athentication process, users or persons are validated.</td>
                </tr>
                <tr>
-               <td>Athentication is done before authorization process.</td>
-               <td>Authorization process is done after the authentication process.</td>
+               <td>3. Athentication is done before authorization process.</td>
+               <td>3. Authorization process is done after the authentication process.</td>
                </tr>
             </table>
            </div>
