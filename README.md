@@ -1,5 +1,9 @@
 # Live Website Link
 [WISDOM TEETH REMOVAL](https://assignment-10-9be48.web.app/about)
+
+## Feature
+* Responsive homepage. 
+* Implement login system. 
 ## pages
 * home page
 * about page
