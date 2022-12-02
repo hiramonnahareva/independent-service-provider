@@ -8,7 +8,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { signOut } from 'firebase/auth';
 
 const Header = () => {
-    const [click, setClick] = useState(true);
+    const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
     const [user] = useAuthState (auth) ;
     const handleSignout = () => {

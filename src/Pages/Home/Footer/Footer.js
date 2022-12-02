@@ -6,11 +6,12 @@ const Footer = () => {
         <div className='footer-container'>
             <div className="footer-info">
             <div>
-                <h3> About </h3>
-                <h3>Contact</h3>
+                <h3>About</h3>
+                
                
             </div>
             <div className='contact'>
+            <h3>Contact</h3>
                 <h4><BsFacebook/> https://www.facebook.com</h4>
                 <h4><BsTelephoneFill/> +01799882200</h4>
                 <h4><BsInstagram/> https://www.instagram.com</h4>

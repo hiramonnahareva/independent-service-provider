@@ -1,3 +1,4 @@
+
 .banner-img {
     position: relative;
     width: 100%;
@@ -6,22 +7,24 @@
 }
 .banner-info {
     position: absolute;
-    top: 25%;
+    top: 35%;
     left: 5%;
     width: 50%;
    
 }
-.banner-container h2 {
-    font-size: 40px;
-    font-weight: 300;
+.banner-container h3 {
+    /* text-align: center; */
+    padding: 20px;
+    font-size: 38px;
+    color: #1a74bb;
     
 }
 .banner-container p {
     font-size: 24px;
     line-height: 30px;
     font-weight: 300;
-    text-align: justify;
-    padding-left: 120px;
+    /* text-align: justify; */
+    padding-left: 15px;
 }
 @media screen and (max-width: 860px) {
     
@@ -33,10 +36,15 @@
 
        
     }
-    .banner-container h2 {
+    .banner-container img{
+        height: 25vh;
+
+       
+    }
+    .banner-container h3 {
         font-size: 25px;
         font-weight: 300;
-        padding: 5px;
+        padding:  5px;
         
     }
     .banner-container p {

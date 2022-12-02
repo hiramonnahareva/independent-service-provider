@@ -47,7 +47,7 @@ const Login = () => {
                             <input className='input-field' type="text" placeholder='Enter Your Name' />
                             <input onBlur={handleEmailBlur} className='input-field' type="email" placeholder='Enter Your Email' required />
                             <input onBlur={handlePasswordBlur} className='input-field' type="password" placeholder='Enter Your Password' required />
-                            <input className='submit-btn' type="submit" value="search" />
+                            <input className='submit-btn' type="submit" value="Login" />
                             {loading && <p>Loading...</p>}
                             {sending && <p>Loading...</p>}
                             <p>{error?.message}</p>

@@ -5,8 +5,11 @@
     color: white;
     text-align: start;
 }
-.footer-container h1 {
+.footer-containe h3 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 50px;
+    font-size: 30px;
+    color: #ffff;
 }
 .footer-info {
     display: flex;

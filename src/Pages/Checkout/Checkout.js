@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import 'reactjs-popup/dist/index.css';
+import swal from 'sweetalert';
 const Checkout = () => {
+
+    const [click, setClick] = useState(true);
+
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const handleEmail = event => {
@@ -12,7 +16,20 @@ const Checkout = () => {
        }
        const handleFormSubmit = event => {
            if (email && password){
-            alert ('Hello !! welcome to this website')
+            swal({
+                title: "Good job!",
+                text: "You are successfully add the information",
+                icon: "success",
+                button: "Aww yiss!",
+              });
+           }
+           else{
+            swal({
+                title: "Something went wrong",
+                text: "Some information is missing",
+                icon: "error",
+                button: "error!",
+              });
            }
            event.preventDefault()
        }
@@ -28,7 +45,7 @@ const Checkout = () => {
                     <input  className='input-field' type="text" placeholder='Enter Your Phone number'/>
                     <input onBlur={handleEmail} className='input-field' type="email" placeholder='Enter Your Email' required/>
                     <input  onBlur={handlePassword} className='input-field' type="password" placeholder='Enter Your Password' required/>
-                    <input className='submit-btn' type="submit" value="search" />
+                    <input className='submit-btn' type="submit" value="Submit" />
                 </form>
             </div>
         </div>

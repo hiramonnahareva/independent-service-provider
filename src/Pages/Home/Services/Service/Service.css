@@ -1,6 +1,6 @@
 .service-container {
-    background-color: rgb(233, 233, 233);
-    width: 28rem;
+    background-color: rgb(241, 240, 240);
+    width: 26rem;
 }
 .service-container .image-container  {
     width: 100%;
@@ -30,7 +30,7 @@ figure {
     bottom: -32px;
     background-color: #FFFFFF;
     border-radius: 50px;
-    left: 45%;
+    left: 40%;
 }
 .service-info {
     padding: 20px;
