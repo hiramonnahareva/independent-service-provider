@@ -73,15 +73,23 @@ ul{
 }
 
 @media screen and (max-width: 860px) {
+    
+    .navbar-container {
+        
+        position: relative;
+        background-color: #FFFFFF;
+        transition: all 1s ease-in; 
+    }
     .logo {
         position: absolute;
-        top: 15px;
+        top: 12px;
         left: 35px;
     }
-    .navbar-container {
-        position: relative;
-        background-color: #d7e9ff;
+
+    .logo-container span {
+        font-size: 18px;
     }
+
     .nav-item {
         font-size: 20px;
         padding: 10px 0;
@@ -94,6 +102,7 @@ ul{
         top: 15px;
         right: 50px;
         z-index: 2;
+        transition: all 0.9s ease-in-out; 
     }
    .menu-bar{
         display: block;
@@ -102,9 +111,14 @@ ul{
         top: 70px;
         left: 0px;
         padding-top: 20px;
-        transition: all 0.5s ease-in-out; 
+        /* transition-property: all;
+        transition-delay: 1ms;
+        transition-duration: 0ms;
+        transform-origin: 0%; */
+        transition: 0.3s;
+        /* transition: all 1ms ease-in;  */
         width: 100%;
-        background-color: #d7e9ff;
+        background-color: #FFFFFF;
         height: 300px;
         z-index: 1;
     }
@@ -116,11 +130,11 @@ ul{
 
     }
     .sign-up-btn {
-        background-color: #FFFFFF;
+        background-color: #3475a7;
         border: none;
         padding: 10px 20px;
         border-radius: 25px;
-        color: #3475a7;
+        color: white;
         font-size: 16px;
         font-weight: 600;
     }

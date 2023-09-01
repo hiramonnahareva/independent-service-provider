@@ -1,0 +1,92 @@
+.get-off-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.img-container>img {
+    height: 60vh;
+    background-attachment: fixed;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+.dentist {
+    position: absolute;
+    top: 0;
+    right: -80px;
+    height: 100%;
+    width: 400px;
+}
+
+.img-container {
+    position: relative;
+}
+
+.get-off-info {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 40px;
+    color: white;
+}
+
+.get-off-info h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+
+@media only screen and (max-width: 830px) {
+    .get-off-info {
+        position: absolute;
+        top: 0;
+        width: 90%;
+        padding: 20px;
+        left: 10px;
+        right: 10px;
+    }
+    .get-off-container {
+        padding: 20px;
+    }
+    .get-off-info {
+        position: absolute;
+        top: 0;
+        width: 80%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 40px;
+        color: white;
+    }
+    .img-container {
+        margin: 20px;
+    }
+    
+    .dentist {
+        height: 100px;
+    }
+    } 
+@media only screen and (max-width: 630px) {
+    .get-off-container {
+        margin: 10px;
+    }
+    
+    .img-container>img {
+        height: 25vh;
+    }
+    .get-off-info>div {
+        padding: 20px;
+    }
+    .get-off-info h2 {
+        font-size: 28px;
+        padding: 0;  
+    }
+
+    } 

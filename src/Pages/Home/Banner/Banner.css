@@ -1,57 +1,65 @@
 
-.banner-img {
-    position: relative;
-    width: 100%;
-    /* background: linear-gradient(36, 20, 51, 0.873); */
+.banner-container {
+    background-image: url('../../../images/dental-surgery_hero.png');
+    background-size: cover;
     
 }
 .banner-info {
-    position: absolute;
-    top: 35%;
-    left: 5%;
-    width: 50%;
-   
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
 }
 .banner-container h3 {
     /* text-align: center; */
-    padding: 20px;
-    font-size: 38px;
-    color: #1a74bb;
+    padding: 45px;
+    font-size: 48px;
+    font-weight: 800;
+    color: #0b395c;
+    line-height: 70px;
+    text-transform: uppercase;
+    
+    
+}
+.banner-container h3 .banner-title {
+    color: white;
     
 }
 .banner-container p {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 30px;
     font-weight: 300;
+    color: white;
     /* text-align: justify; */
-    padding-left: 15px;
+    padding-left: 50px;
+    line-height: 40px;
 }
 @media screen and (max-width: 860px) {
     
     .banner-info {
-        position: absolute;
-        top: 14%;
-        left: 5%;
-        width: 95%;
-
-       
+        justify-content: center;
     }
+    
     .banner-container img{
         height: 25vh;
 
        
     }
     .banner-container h3 {
-        font-size: 25px;
-        font-weight: 300;
         padding:  5px;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 45px;
         
     }
     .banner-container p {
         font-size: 16px;
         font-weight: 300;
-        padding-right: 15px;
-        padding-left: 0px;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-left: 10px;
+        line-height: 28px;
+
          
     }
 }

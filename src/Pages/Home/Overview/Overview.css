@@ -1,0 +1,10 @@
+.overview-container {
+    background-image: url('../../../images/bg-banner.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 80px 0 80px 0 ;
+}
+.text-containt {
+    height: 60vh;
+    
+}

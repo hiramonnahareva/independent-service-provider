@@ -1,6 +1,6 @@
 .service-container {
     background-color: rgb(241, 240, 240);
-    width: 26rem;
+    width: 100%;
 }
 .service-container .image-container  {
     width: 100%;
@@ -10,6 +10,7 @@
 figure {
     overflow: hidden;
 }
+
 .image-container img{
     display: block;
      width: 100%;
@@ -19,9 +20,11 @@ figure {
 #zoom-in img {
     transform: scale(1);
     transition: 0.3s ease-in-out;
+    opacity: 100;
 }
 #zoom-in:hover img {
     transform: scale(1.5);
+    opacity: 50%;
 }
 .plus-icon {
     font-size: 70px;
@@ -61,25 +64,27 @@ figure {
 }
 .checkout-container {
     display: flex;
-    justify-content: center;
+    padding: 10px;
+    /* justify-content: center; */
 }
-.checkout-btn {
-    margin-top: 10px;
+.btn {
+    margin-top: 20px;
     padding: 10px 35px;
     border: 2px #1a74bb solid;
+    background: none;
     font-size: 16px;
     font-weight: 500;
     color: #1a74bb;
     text-decoration: none;
     transition: 0.3s ease-in-out;
+    transform-origin: 0% 100%;
 }
-.checkout-btn:hover {
+.btn:hover {
     background-color: #1a74bb;
     color: #FFFFFF;
 }
 @media screen and (max-width: 860px) {
     .service-container {
         background-color: rgb(233, 233, 233);
-        width: 15rem;
     }
 }

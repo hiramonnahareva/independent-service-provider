@@ -21,7 +21,7 @@ const Service = ({service}) => {
             <p>At The Smile Specialists, removing a tooth is always the last resort.</p>
             <h4>Price: <span>{Price}</span></h4>
            <div className="checkout-container">
-           <Link to='/checkout' className='checkout-btn'>Checkout</Link>
+           <Link to='/checkout' className='btn'>Checkout</Link>
            </div>
             </div>
         </div>
