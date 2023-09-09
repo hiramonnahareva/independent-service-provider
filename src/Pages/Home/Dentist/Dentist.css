@@ -27,8 +27,8 @@
 
 .blog-image img {
   flex: 1;
-  /* height: auto; */
   width: 100%;
+
 }
 
 @media (max-width: 968px) {
