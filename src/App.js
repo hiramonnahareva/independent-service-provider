@@ -10,7 +10,6 @@ import Blogs from './Pages/Blogs/Blogs';
 import RequireAuth from './RequireAuth';
 import About from './Pages/About/About';
 
-
 function App() {
   return (
     <div className="App">
